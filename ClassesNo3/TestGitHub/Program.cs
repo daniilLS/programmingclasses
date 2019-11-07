@@ -8,6 +8,7 @@ namespace TestGitHub
         {
             Console.WriteLine("Hello Daniil");
             Console.WriteLine("what's up?");
+             Console.WriteLine("this ine was added in GitHub");
         }
     }
 }
