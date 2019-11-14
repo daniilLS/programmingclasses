@@ -1,5 +1,5 @@
 ﻿using System;
-
+using static BasicMethods.MathUtilities;
 namespace BasicMethods
 {
     class Program
@@ -7,7 +7,10 @@ namespace BasicMethods
         static void Main(string[] args)
         {
         
-            Console.WriteLine(MathUtilities.solveliniarequetion(3, 6));
+            Console.WriteLine(solveliniarequetion(3, 6));
+            Console.WriteLine(GetBiggerNumber(10,7));
+            Console.WriteLine(GetBiggerNumber(5,8));
+            Console.WriteLine(GCD(56,49));
         }
     }
 }
