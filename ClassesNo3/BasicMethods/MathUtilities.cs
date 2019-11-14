@@ -48,5 +48,10 @@ namespace BasicMethods
             }
             return true;
         }
+        public static bool AreCoPrime( int a,int b)
+        {
+           
+            return GCD(a,b) == 1;
+        }
     }
 }

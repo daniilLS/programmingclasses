@@ -13,6 +13,10 @@ namespace BasicMethods
             Console.WriteLine(GCD(56,49));
             Console.WriteLine(IsPrime(17));
             Console.WriteLine(IsPrime(18));
+            Console.WriteLine(AreCoPrime(8,9));
+            Console.WriteLine(AreCoPrime(8, 10));
+
+
 
 
         }
