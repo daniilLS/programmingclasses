@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGitHub", "TestGitHub\TestGitHub.csproj", "{BD874AA4-AC44-481D-9821-44FA7D1F6413}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestGitHub", "TestGitHub\TestGitHub.csproj", "{BD874AA4-AC44-481D-9821-44FA7D1F6413}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicMethods", "BasicMethods\BasicMethods.csproj", "{FB4BBF86-3C1F-4EEB-AE37-C569FD614C29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicMethods", "BasicMethods\BasicMethods.csproj", "{FB4BBF86-3C1F-4EEB-AE37-C569FD614C29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestOne", "TestOne\TestOne.csproj", "{5599F5D6-8D88-430E-A944-6B6FEB73431E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FB4BBF86-3C1F-4EEB-AE37-C569FD614C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB4BBF86-3C1F-4EEB-AE37-C569FD614C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB4BBF86-3C1F-4EEB-AE37-C569FD614C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5599F5D6-8D88-430E-A944-6B6FEB73431E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5599F5D6-8D88-430E-A944-6B6FEB73431E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5599F5D6-8D88-430E-A944-6B6FEB73431E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5599F5D6-8D88-430E-A944-6B6FEB73431E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
