@@ -9,6 +9,13 @@ namespace ArraysClasses
             //FirstExample();
             //SecondExample();
             //ThirdExample();
+            double[] weektemperature = { 8.7, 9, 6, 7, 4, 3, 1 };
+            double[] NextNumber = new double[7];
+            for (int i = weektemperature.Length ) 
+            {
+
+            }
+            
         }
 
         private static void ThirdExample()
