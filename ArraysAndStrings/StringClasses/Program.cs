@@ -10,6 +10,7 @@ namespace StringClasses
             //IsYourNameLong();
             //string test="2,4,5,23,2";
             // int[] testResult = ConvertToArray(test);
+            //HW create a method string ToPascalCase(string input) ToPascalCase("this clear") return ThisClear
             Console.WriteLine(ToSentence("thiS Sectence Has creppy CasTing"));
         }
         public static string ToSentence(string input)
