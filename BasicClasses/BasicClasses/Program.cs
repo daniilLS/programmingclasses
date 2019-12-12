@@ -5,20 +5,20 @@ namespace BasicClasses
 
     public class Person
     {
-        private int Height;
-        private int Weight;
+        private int _height;
+        private int _weight;
         public Person(int height,int weight) // consrtructor
         {
             if (height <= 0 || weight <= 0)
 
                 throw new ArgumentException("the height cannot be 0, should be possitive ");
            
-            Height = height;
-            Weight = weight;
+            _height = height;
+            _weight = weight;
         }
         public int Bmi()
         {
-            return 10000 * Weight / (Height * Height);
+            return 10000 * _weight / (_height * _height);
 
         }
         public string Classsification()
@@ -44,14 +44,20 @@ namespace BasicClasses
                 return "eat less";
             return "stop eating";
         }
-        public int GetHeight()
-        {
-            return Height;
-        }
-        public int GetWeight()
-        {
-            return Weight;
-        }
+        ////public int Height -- old school
+        //{
+        //    get
+        //    {
+        //        return _height;
+        //    }
+        //}
+        //public int Height -- modern school
+        //{
+        //    get => _height;
+        //}
+        public int Height => _height;// property (new school)
+        public int Weight => _weight;// property
+        
     }
 
 
