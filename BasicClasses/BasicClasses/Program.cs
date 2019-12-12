@@ -5,10 +5,14 @@ namespace BasicClasses
 
     public class Person
     {
-        public int Height;
-        public int Weight;
+        private int Height;
+        private int Weight;
         public Person(int height,int weight) // consrtructor
         {
+            if (height <= 0 || weight <= 0)
+
+                throw new ArgumentException("the height cannot be 0, should be possitive ");
+           
             Height = height;
             Weight = weight;
         }
@@ -40,6 +44,14 @@ namespace BasicClasses
                 return "eat less";
             return "stop eating";
         }
+        public int GetHeight()
+        {
+            return Height;
+        }
+        public int GetWeight()
+        {
+            return Weight;
+        }
     }
 
 
@@ -50,7 +62,7 @@ namespace BasicClasses
         {
             Person Daniil = new Person(179,60);
             
-            Console.WriteLine($"bmi for {Daniil.Weight} weight and  {Daniil.Height} hight is {Daniil.Bmi()}");
+            Console.WriteLine($"bmi for {Daniil.GetWeight()} weight and  {Daniil.GetHeight()} hight is {Daniil.Bmi()}");
             Console.WriteLine($"classification is {Daniil.Classsification()}");
             Console.WriteLine($"recommendation is {Daniil.Recommendation()}");
         } 
