@@ -30,8 +30,8 @@
         {
             this.startbutton = new System.Windows.Forms.Button();
             this.massagelable = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.guessinput = new System.Windows.Forms.TextBox();
+            this.guessbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // startbutton
@@ -53,29 +53,32 @@
             this.massagelable.TabIndex = 1;
             this.massagelable.Text = "label1";
             // 
-            // textBox1
+            // guessinput
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 129);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.guessinput.Enabled = false;
+            this.guessinput.Location = new System.Drawing.Point(35, 129);
+            this.guessinput.Name = "guessinput";
+            this.guessinput.Size = new System.Drawing.Size(100, 20);
+            this.guessinput.TabIndex = 2;
             // 
-            // button1
+            // guessbutton
             // 
-            this.button1.Location = new System.Drawing.Point(165, 129);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 20);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Guess";
-            this.button1.UseVisualStyleBackColor = true;
+            this.guessbutton.Enabled = false;
+            this.guessbutton.Location = new System.Drawing.Point(165, 129);
+            this.guessbutton.Name = "guessbutton";
+            this.guessbutton.Size = new System.Drawing.Size(85, 20);
+            this.guessbutton.TabIndex = 3;
+            this.guessbutton.Text = "Guess";
+            this.guessbutton.UseVisualStyleBackColor = true;
+            this.guessbutton.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.guessbutton);
+            this.Controls.Add(this.guessinput);
             this.Controls.Add(this.massagelable);
             this.Controls.Add(this.startbutton);
             this.Name = "Form1";
@@ -89,8 +92,8 @@
 
         private System.Windows.Forms.Button startbutton;
         private System.Windows.Forms.Label massagelable;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox guessinput;
+        private System.Windows.Forms.Button guessbutton;
     }
 }
 
