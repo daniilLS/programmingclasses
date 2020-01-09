@@ -28,7 +28,7 @@ namespace Basicapp
             massagelable.Text = "Guess a number from 1 to 100";
             startbutton.Enabled = false;
             _numberToGuess = _random.Next(1, 101);
-            guessbutton.Enabled = true;
+            
             guessinput.Enabled = true;
 
         }
@@ -37,19 +37,9 @@ namespace Basicapp
         {
             string input = guessinput.Text;
             guessinput.Text = "";
-            int result;
-            bool validNumber = int.TryParse(input, out result);
-            if (!validNumber)
-            {
-                MessageBox.Show("Please provide a valid number");
-                return;
-            }
-            if (result < 1 ||result > 100)
-            {
-                MessageBox.Show("please provide a number from 1 to 100");
-                return;
-
-            }
+            int result =  int.Parse(input);
+           
+       
             if (result> _numberToGuess)
             {
                 massagelable.Text = "too big guess again";
@@ -67,6 +57,23 @@ namespace Basicapp
                 guessinput.Enabled = false;
             }
           
+        }
+
+        private void guessinput_TextChanged(object sender, EventArgs e)
+        {
+            string input = guessinput.Text;
+            int result;
+            bool validNumber = int.TryParse(input, out result);
+            if (!validNumber || result < 1 || result > 100)
+            {
+                guessbutton.Enabled = false;
+
+            }
+            else
+            {
+                guessbutton.Enabled = true;
+
+            }
         }
     }
 }

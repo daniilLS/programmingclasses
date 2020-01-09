@@ -60,6 +60,7 @@
             this.guessinput.Name = "guessinput";
             this.guessinput.Size = new System.Drawing.Size(100, 20);
             this.guessinput.TabIndex = 2;
+            this.guessinput.TextChanged += new System.EventHandler(this.guessinput_TextChanged);
             // 
             // guessbutton
             // 
