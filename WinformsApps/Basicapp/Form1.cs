@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Basicapp
@@ -14,6 +7,7 @@ namespace Basicapp
     {
         private Random _random = new Random();
         private int _numberToGuess;
+        private int _numberOfGuesses;
 
         public Form1()
         {
@@ -30,11 +24,17 @@ namespace Basicapp
             _numberToGuess = _random.Next(1, 101);
             
             guessinput.Enabled = true;
-
+            _numberOfGuesses = 0;
+           
+            GuessNumberLable.Text = _numberOfGuesses.ToString();
+            guessHistory.Items.Clear();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            _numberOfGuesses++;
+            GuessNumberLable.Text = _numberOfGuesses.ToString();
+
             string input = guessinput.Text;
             guessinput.Text = "";
             int result =  int.Parse(input);
@@ -43,11 +43,13 @@ namespace Basicapp
             if (result> _numberToGuess)
             {
                 massagelable.Text = "too big guess again";
+                guessHistory.Items.Add(result.ToString()+ "+");
 
             }
             else if (result<_numberToGuess)
             {
                 massagelable.Text = "too small guess again";
+                guessHistory.Items.Add(result.ToString()+ "-");
             }
             else
             {
@@ -56,11 +58,13 @@ namespace Basicapp
                 guessbutton.Enabled = false;
                 guessinput.Enabled = false;
             }
+            
           
         }
 
         private void guessinput_TextChanged(object sender, EventArgs e)
         {
+            
             string input = guessinput.Text;
             int result;
             bool validNumber = int.TryParse(input, out result);
@@ -74,6 +78,11 @@ namespace Basicapp
                 guessbutton.Enabled = true;
 
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

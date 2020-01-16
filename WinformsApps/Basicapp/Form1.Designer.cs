@@ -32,6 +32,8 @@
             this.massagelable = new System.Windows.Forms.Label();
             this.guessinput = new System.Windows.Forms.TextBox();
             this.guessbutton = new System.Windows.Forms.Button();
+            this.GuessNumberLable = new System.Windows.Forms.Label();
+            this.guessHistory = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // startbutton
@@ -73,17 +75,38 @@
             this.guessbutton.UseVisualStyleBackColor = true;
             this.guessbutton.Click += new System.EventHandler(this.button1_Click);
             // 
+            // GuessNumberLable
+            // 
+            this.GuessNumberLable.AutoSize = true;
+            this.GuessNumberLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GuessNumberLable.Location = new System.Drawing.Point(281, 36);
+            this.GuessNumberLable.Name = "GuessNumberLable";
+            this.GuessNumberLable.Size = new System.Drawing.Size(70, 76);
+            this.GuessNumberLable.TabIndex = 4;
+            this.GuessNumberLable.Text = "0";
+            // 
+            // guessHistory
+            // 
+            this.guessHistory.FormattingEnabled = true;
+            this.guessHistory.Location = new System.Drawing.Point(45, 171);
+            this.guessHistory.Name = "guessHistory";
+            this.guessHistory.Size = new System.Drawing.Size(380, 251);
+            this.guessHistory.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(442, 432);
+            this.Controls.Add(this.guessHistory);
+            this.Controls.Add(this.GuessNumberLable);
             this.Controls.Add(this.guessbutton);
             this.Controls.Add(this.guessinput);
             this.Controls.Add(this.massagelable);
             this.Controls.Add(this.startbutton);
             this.Name = "Form1";
             this.Text = "Guessing game";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,6 +118,8 @@
         private System.Windows.Forms.Label massagelable;
         private System.Windows.Forms.TextBox guessinput;
         private System.Windows.Forms.Button guessbutton;
+        private System.Windows.Forms.Label GuessNumberLable;
+        private System.Windows.Forms.ListBox guessHistory;
     }
 }
 
