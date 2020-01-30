@@ -41,7 +41,7 @@ namespace InvoiceManager
                 {
                     dates.Add(elements[0]);
                 }
-                string massege = $"total dates: {dates.Count}, total amoun: {totalsum}.";
+                string massege = $"total dates: {dates.Distinct().Count()}, total amoun: {totalsum}.";
                 resultlable.Text = massege;
 
             }
