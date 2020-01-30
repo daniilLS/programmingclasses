@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceManager", "InvoiceManager\InvoiceManager.csproj", "{A5554514-E91A-44F7-BF43-C21C7C79E6CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geometry", "Geometry\Geometry.csproj", "{86421B4C-97C8-4412-8AD8-3EF9E4801AD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A5554514-E91A-44F7-BF43-C21C7C79E6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5554514-E91A-44F7-BF43-C21C7C79E6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5554514-E91A-44F7-BF43-C21C7C79E6CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86421B4C-97C8-4412-8AD8-3EF9E4801AD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86421B4C-97C8-4412-8AD8-3EF9E4801AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86421B4C-97C8-4412-8AD8-3EF9E4801AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86421B4C-97C8-4412-8AD8-3EF9E4801AD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
